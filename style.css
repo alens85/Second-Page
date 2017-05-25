@@ -1,0 +1,314 @@
+/* --------------- reset.css --------------- */
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, em, img, strong, sub, sup, b, u, i,  dl, dt, dd, ol, ul, li, fieldset, form, label, table, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;                               /* обнул¤ем отступы и убираем бордюры */
+    vertical-align: baseline;          /* приводим все к одной базовой линии */
+    background: transparent;      /* чтобы не проскакивали левые фоны, установленные по умолчанию */
+    font-size: 100%;                     /* размер шрифта всем одинаковый */
+}
+a {                                              /* ссылка не в общем списке чтобы не сбрасывать outline по умолчанию */
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+    outline:none;
+}
+table {                     /* устран¤ем отступы между ¤чейками таблицы */
+    border-collapse: collapse; 
+    border-spacing: 0;
+}
+td, td img {
+    vertical-align: top;            /* возвращаем привычное вертикальное выравнивание */
+} 
+input, select, button, textarea {
+    margin: 0;              /* убираем отступы по умолчанию дл¤ элементов форм (в частности дл¤ checkbox и radio) */
+    font-size: 100%;            /* делаем размер шрифтов везде одинаковым */
+    outline: none;
+}
+input[type="text"], input[type="password"], textarea {
+    padding: 0;                 /* убираем внутренние отступы дл¤ текстовых полей */
+}
+input[type="checkbox"] {        /* вертикальное выравнивание чекбоксов и радиобатонов относительно меток */
+    vertical-align: bottom;
+}
+input[type="radio"] {
+    vertical-align: text-bottom;
+}
+sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+sup {
+    vertical-align: super;
+    font-size: smaller;
+}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+    display:block;
+}
+nav ul {
+     list-style:none;
+}
+/* --------------- /reset.css --------------- */
+
+/* --------------- базовые настройки ---------*/
+html {
+    min-height:100%; /* всегда показываем вертикальную полосу прокрутки  */
+}
+body {
+    color: #606060;
+    text-align: left;
+    font-size: 1em; /* используем безопасные шрифтовые CSS стеки */
+    min-height:100%;
+    font-family: 'Open Sans', sans-serif;
+}
+a:visited { /* пор¤док правил дл¤ ссылок имеет значение */
+    color: #339933;
+    text-decoration: overline;
+}
+a:hover {
+    color: #339933;
+    text-decoration:none;
+}
+a:focus, a:active {
+    color: #339933;
+    text-decoration: underline;
+}
+h1, h2, h3, h4, h5, h6{
+    font-weight:normal;
+}
+img{
+
+    max-width:100%;
+}
+.clr{
+    clear:both;
+}
+.clearfix:after {
+    clear: both;
+    content: "";
+    display: table;
+}
+/* --------------- /базовые настройки ---------*/
+
+/* ------------------ /Шапка Сайта/ ------------------*/
+
+header{
+    background:#292929;overflow:hidden;
+}
+
+    .center-block-main{
+        margin:0 auto; max-width:990px; 
+    }
+
+    .logo{
+        float:left; margin-top:45px;
+    }
+
+    .menu-main{
+        float:right;
+    }
+
+    .menu-main li{
+        float:left; font-weight:600;
+    }
+
+    .menu-main li a{
+        color:#fff; text-decoration:none; padding:50px 37px; display:block; border-bottom:3px solid #292929; border-right:1px solid #1d1d1d; 
+        margin-right:-1px;   /*Добавил margin,чтобы бордер идущий от контента сливался с бордером,идущим от верхнего меню*/
+    }
+
+    .menu-main li:first-child{
+        border-left:1px solid #1d1d1d;
+    }
+
+    .menu-main li a:hover{
+        color:#58c93a; border-bottom:3px solid #58c93a;
+    }
+
+/* ------------------ /Основной Контент/ ------------------*/
+
+.content{
+   border-left:1px solid #e1e0e0; border-right:1px solid #e1e0e0;
+}
+
+
+    main{
+    float:left; width:62.5%; margin-top:70px;
+    }
+
+    article{
+        padding-bottom:50px;
+    }
+
+    article>header{
+        font-size:0; background:none; margin-bottom:10px;
+    }
+
+    article>h2{ 
+        color:#4f4e4e; font-size:1.75em; font-weight:600; text-transform:uppercase; line-height:107.14%; letter-spacing:0.03em;
+        margin:0 0 40px 20px; 
+    }
+
+    article>p{
+        margin:0 0 20px 20px; line-height:125%; letter-spacing:0.03em;
+    }
+
+    a.more{
+        border:2px solid #485575; color:#2146b2; padding:11px 16px 12px 16px; display:inline-block; border-radius:20px;
+        text-decoration:none;
+        -webkit-transition:color 0.1s linear,border-color 0.1s linear;
+        -moz-transition:color 0.1s linear,border-color 0.1s linear;
+        -o-transition:color 0.1s linear,border-color 0.1s linear;
+        transition:color 0.1s linear,border-color 0.1s linear;
+    }
+
+    a:hover.more{
+        color:#339933; border-color:#339933; text-decoration:underline; 
+    }
+
+    .firstimage{
+        border:none; box-sizing:border-box; 
+    }
+
+    .secondimage{
+        border:none; box-sizing:border-box; 
+    }
+
+/* ------------------ /Правый Блок/ ------------------*/
+
+aside{ 
+    float:right; width:28.3%; margin-top:70px;
+}
+
+.widget{
+    margin-bottom:50px;
+}
+    .widget-banner{
+        width:282px; 
+    }
+     
+    .widget h2{
+        font-weight:600; letter-spacing:0.03em; text-transform:uppercase; 
+        color:#6c6969; background:#f8f8f8;  padding:17px 0 21px 20px; border-left:3px solid #58c93a; margin-bottom:20px;
+    }
+
+    .search{
+        color:#b9b9b9; font-size:0.75em; width:100%; border:1px solid #e1e0e0; padding:17px 10px 17px 18px; border-right:none;
+    }
+
+    .widget>nav{
+        margin-left:18px;
+    }
+
+    .subscribe-email{
+        color:#b9b9b9; font-size:0.75em; width:100%; border:1px solid #e1e0e0; padding:17px 45px 17px 18px; box-sizing:border-box;
+        border-right:none; position:absolute; top:0; left:0;
+    }
+
+    .subscribe{
+        position:relative; width:100%; height:48px;
+    }
+
+    .subscribe-img{
+        position:absolute; right:13px; top:12px;             /*position:relative; top:12px; right:-240px;*/
+    }
+
+    .banner{
+        box-sizing:border-box; position:relative; right:0px; width:282px;
+    }
+
+/* ------------- /Кнопки(ссылки) PREVIOUS и NEXT/ ---------------*/
+
+.pagenav{
+    font-size:1.125em; font-weight:bold; letter-spacing:0.05em;  text-transform:uppercase; 
+    width:100%; height:83px; border-top:1px solid #e1e0e0; position:relative; box-sizing:border-box;
+}
+
+    .pagenav a{
+        color:#818181; text-decoration:none;
+    }
+
+    .pagenav a:hover{
+        text-decoration:underline; color:#339933;
+    }
+
+    .prevpage{
+        float:left; padding:25px 0 39px 54px;
+    }
+
+    .nextpage{
+        float:right; padding:25px 55px 0 0;
+    }
+
+    .strelkaleft{
+        position:absolute; top:23px; left:31px;
+    }
+
+    .strelkaright{
+        position:absolute; top:23px; right:30px;
+    }
+
+/* ------------------ /Footer/ ------------------*/
+
+footer{
+    background:#f8f8f8; border-top:1px solid #e1e0e0; text-align:center; font-size:13px; letter-spacing:0.03em; line-height:153.84%; padding:78.5px 0; 
+}
+
+    footer p{
+        margin-top:50px;
+    }
+
+/* ------------------ /Медиа Запросы/ ------------------*/
+@media screen and (max-width:768px){
+    .logo{
+        margin-top:15px;
+    }
+    
+    .menu-main li a{
+        padding:20px 35px;
+    }
+    
+    main{
+        float:none; width:100%; margin-top:20px;
+    }
+    
+    article>header img{
+        width:100%;
+    }
+    
+    aside{ 
+        float:none; width:100%; margin-top:20px;
+    }
+}
+
+@media screen and (max-width:620px){
+    .logo{
+        float:none; margin:10px auto; display:block;
+    }
+    
+    .menu-main{
+        float:none;width:100%;
+    }
+    
+    .menu-main li{float:none; display:inline;}
+    
+    .menu-main li a{
+        padding:10px 37px; float:none; display:inline-block; border-bottom:2px solid #292929; border-right:none;
+    }
+    
+    .menu-main li:first-child{
+        border-left:none;
+    }
+
+    .menu-main li a:hover{
+        color:#58c93a; border-bottom:2px solid #58c93a;
+    }
+    
+    nav{
+        text-align:center;
+    }
+    
+}
