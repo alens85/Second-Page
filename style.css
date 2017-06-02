@@ -369,4 +369,7 @@ footer{
         text-align:center;
     }
     
+    .menu-main li a:hover{
+        color:#58c93a;border-bottom:none;
+    }
 }
