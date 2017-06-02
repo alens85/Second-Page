@@ -351,10 +351,10 @@ footer{
         float:none;width:100%;
     }
     
-    .menu-main li{float:none; display:block;}
+    .menu-main li{float:none; display:inline-block;}
     
     .menu-main li a{
-        padding:10px 37px;  float:none; display:block; border-right:none; margin:0 auto;
+        padding:10px 37px; width:100px; float:none; display:inline-block; border-right:none; margin:0 auto;
     }
     
     .menu-main li:first-child{
@@ -371,5 +371,6 @@ footer{
     
     .menu-main li a:hover{
         color:#58c93a;border-bottom:none;
+        123123
     }
 }
